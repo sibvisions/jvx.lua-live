@@ -37,6 +37,7 @@ import javax.swing.event.DocumentListener;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
+import org.luaj.vm2.lib.jse.CoerceLuaToJava;
 
 import com.sibvisions.rad.lua.LuaEnvironment;
 import com.sibvisions.util.type.FileUtil;
@@ -181,7 +182,7 @@ public class MainFrame extends UIFrame
 		
 		try
 		{
-			IComponent component = environment.execute(textArea.getText());
+			IComponent component = (IComponent)CoerceLuaToJava.coerce(environment.execute(textArea.getText()), IComponent.class);
 			
 			if (component != null)
 			{
@@ -190,6 +191,7 @@ public class MainFrame extends UIFrame
 		}
 		catch (Throwable th)
 		{
+			th.printStackTrace();
 			errorDisplay.setError(th.getMessage(), previousComponent);
 			
 			displayContainer.add(errorDisplay, UIBorderLayout.CENTER);
