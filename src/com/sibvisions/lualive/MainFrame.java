@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.sibvisions.jvxlualive;
+package com.sibvisions.lualive;
 
 import java.nio.charset.StandardCharsets;
 
@@ -85,7 +85,7 @@ public class MainFrame extends UIFrame
 		
 		initializeUI();
 		
-		textArea.setText(new String(FileUtil.getContent(ResourceUtil.getResourceAsStream("/com/sibvisions/jvxlualive/default.lua")), StandardCharsets.UTF_8));
+		textArea.setText(new String(FileUtil.getContent(ResourceUtil.getResourceAsStream("/com/sibvisions/lualive/default.lua")), StandardCharsets.UTF_8));
 		textArea.getDocument().addDocumentListener(new CodeChangedListener());
 		
 		updateDisplayedComponent();
@@ -101,8 +101,8 @@ public class MainFrame extends UIFrame
 		UIPanel headerPanel = new UIPanel();
 		headerPanel.setLayout(headerLayout);
 		headerPanel.setBackground(UIColor.white);
-		headerPanel.add(new UIIcon(UIImage.getImage("/com/sibvisions/jvxlualive/images/jvx.png")), headerLayout.getConstraints(0, 0));
-		headerPanel.add(new UIIcon(UIImage.getImage("/com/sibvisions/jvxlualive/images/lua.png")), headerLayout.getConstraints(-1, 0));
+		headerPanel.add(new UIIcon(UIImage.getImage("/com/sibvisions/lualive/images/jvx.png")), headerLayout.getConstraints(0, 0));
+		headerPanel.add(new UIIcon(UIImage.getImage("/com/sibvisions/lualive/images/lua.png")), headerLayout.getConstraints(-1, 0));
 		addBorder(headerPanel, IAlignmentConstants.ALIGN_STRETCH, IAlignmentConstants.ALIGN_BOTTOM);
 		
 		errorDisplay = new ErrorDisplay("Error");
@@ -138,7 +138,7 @@ public class MainFrame extends UIFrame
 		splitPanel.setDividerPosition(496);
 		
 		setLayout(new UIBorderLayout());
-		setIconImage(UIImage.getImage("/com/sibvisions/jvxlualive/images/icon.png"));
+		setIconImage(UIImage.getImage("/com/sibvisions/lualive/images/icon.png"));
 		setSize(1024, 600);
 		setTitle("JVx Lua");
 		add(headerPanel, UIBorderLayout.NORTH);
@@ -161,7 +161,7 @@ public class MainFrame extends UIFrame
 		UIFormLayout layout = (UIFormLayout)pContainer.getLayout();
 		IConstraints constraints = layout.getConstraints(layout.getTopAnchor(), layout.getLeftAnchor(), layout.getBottomAnchor(), layout.getRightAnchor());
 		
-		UIIcon border = new UIIcon(UIImage.getImage("/com/sibvisions/jvxlualive/images/border-pixel.png"));
+		UIIcon border = new UIIcon(UIImage.getImage("/com/sibvisions/lualive/images/border-pixel.png"));
 		border.setHorizontalAlignment(pHorizontalAlignment);
 		border.setVerticalAlignment(pVerticalAlignment);
 		

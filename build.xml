@@ -74,7 +74,7 @@
 			<manifest>
 				<attribute name="Implementation-Title" value="JVx/Lua" />
 				<attribute name="Implementation-Vendor" value="SIB Visions GmbH" />
-				<attribute name="Main-Class" value="com.sibvisions.jvxlualive.Main" />
+				<attribute name="Main-Class" value="com.sibvisions.lualive.Main" />
 			</manifest>
 
 			<zipfileset dir="${classes}">

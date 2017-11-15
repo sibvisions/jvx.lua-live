@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.sibvisions.jvxlualive;
+package com.sibvisions.lualive;
 
 import javax.rad.genui.UIColor;
 import javax.rad.ui.IColor;

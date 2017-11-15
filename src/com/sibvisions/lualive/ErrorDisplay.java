@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.sibvisions.jvxlualive;
+package com.sibvisions.lualive;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/jvx.lua-live/src/com/sibvisions/jvxlualive/Main.java"/>
+<listEntry value="/jvx.lua-live/src/com/sibvisions/lualive/Main.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.sibvisions.jvxlualive.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.sibvisions.lualive.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="jvx.lua-live"/>
 </launchConfiguration>

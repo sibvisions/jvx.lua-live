@@ -6,7 +6,7 @@
 
 
 -- Introduction
-local sibVisionsLogo = UIImage.getImage("/com/sibvisions/jvxlualive/images/sib-visions.png")
+local sibVisionsLogo = UIImage.getImage("/com/sibvisions/lualive/images/sib-visions.png")
 local sibVisionsIcon = UIIcon.new(sibVisionsLogo)
 
 local descriptionLabel = UILabel.new("SIB Visions is the company behind JVx, the Enterprise Application Framework.")
