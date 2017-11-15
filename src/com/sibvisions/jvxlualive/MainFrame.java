@@ -138,6 +138,7 @@ public class MainFrame extends UIFrame
 		splitPanel.setDividerPosition(496);
 		
 		setLayout(new UIBorderLayout());
+		setIconImage(UIImage.getImage("/com/sibvisions/jvxlualive/images/icon.png"));
 		setSize(1024, 600);
 		setTitle("JVx Lua");
 		add(headerPanel, UIBorderLayout.NORTH);
