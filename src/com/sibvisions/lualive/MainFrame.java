@@ -86,6 +86,7 @@ public class MainFrame extends UIFrame
 		initializeUI();
 		
 		textArea.setText(new String(FileUtil.getContent(ResourceUtil.getResourceAsStream("/com/sibvisions/lualive/default.lua")), StandardCharsets.UTF_8));
+		textArea.setCaretPosition(0);
 		textArea.getDocument().addDocumentListener(new CodeChangedListener());
 		
 		updateDisplayedComponent();
